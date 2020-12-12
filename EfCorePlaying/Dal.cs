@@ -16,8 +16,10 @@ namespace EfCorePlaying
 
             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             {
-                optionsBuilder.UseSqlServer(
-                    @"Server=(localdb)\mssqllocaldb;Database=Blogging;Integrated Security=True");
+
+                optionsBuilder.UseSqlServer(@"Server = (local); Database = EfCoreDb; User Id = BaseTrade; Password = 1q2w3e4r+;");
+
+                //optionsBuilder.UseSqlServer("Data Source=BaseTrade;initial catalog=EfCoreDb;Integrated Security=false;uid=BaseTrade;password=1q2w3e4r+;");
             }
         }
 
