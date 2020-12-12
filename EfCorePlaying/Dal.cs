@@ -30,6 +30,7 @@ namespace EfCorePlaying
 
             public string Author { get; set; }
             public int Rating { get; set; }
+            public int EsitimateReadInMinutes { get; set; }
             public List<Post> Posts { get; set; }
         }
 
